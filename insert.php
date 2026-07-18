@@ -17,7 +17,7 @@ $sql = "INSERT INTO user1 (id, name, age) VALUES ('', '$name', '$age')";
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
   // إضافة رابط بسيط للعودة إلى صفحة النموذج بعد الحفظ
-  echo "<br><br><a href='index.html'>العودة إلى الصفحة الرئيسية</a>";
+  echo "<br><br><a href='index.php'>العودة إلى الصفحة الرئيسية</a>";
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
